@@ -1,8 +1,9 @@
 <html>
-<h1>
+<body style="margin:0; padding:0; height:100%; width:100%;">
+<div style="text-align:center;">
+  <img id="cover" src="img/" style="height:100%;">
+</div>
 <script>
-var randomNumber = Math.floor(Math.random() * 9);
-var movies = ["Sorcerer's Stone", "Chamber of Secrets", "Prisoner of Azkaban", "Goblet of Fire", "Order of the Phoenix", "Half-blood Prince", "Deathly Hallows Part 1", "Deathly Hallows Part 2", "Marathon"];
-document.write(movies[randomNumber]);
-</script>
-</h1>
+var randomNumber = Math.floor(Math.random() * 8);
+document.getElementById("cover").src += randomNumber + ".jpg";
+</script> 
